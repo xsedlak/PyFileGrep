@@ -56,3 +56,11 @@ This project uses custom pytest markers to organize tests into categories:
 - `@pytest.mark.positive`: Tests for positive cases.
 - `@pytest.mark.negative`: Tests for negative cases.
 These markers are registered in the `pytest.ini` file to avoid warnings.
+
+### Example of Running Specific Tests:
+Run only positive tests:
+```bash
+pytest -m positive -v tests/test_RegexFileSearch.py
+pytest -m corner -v tests/test_RegexFileSearch.py 
+```
+    
